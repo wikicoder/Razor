@@ -64,10 +64,10 @@ namespace TestOutput
                     , StartTagHelperWritingScope, EndTagHelperWritingScope);
                     __InputTagHelper = CreateTagHelper<InputTagHelper>();
                     __tagHelperExecutionContext.Add(__InputTagHelper);
-                    __InputTagHelper.Type = "text";
-                    __tagHelperExecutionContext.AddTagHelperAttribute("type", __InputTagHelper.Type);
                     __InputTagHelper2 = CreateTagHelper<InputTagHelper2>();
                     __tagHelperExecutionContext.Add(__InputTagHelper2);
+                    __InputTagHelper.Type = "text";
+                    __tagHelperExecutionContext.AddTagHelperAttribute("type", __InputTagHelper.Type);
                     __InputTagHelper2.Type = __InputTagHelper.Type;
                     __tagHelperExecutionContext.AddHtmlAttribute("value", Html.Raw(""));
                     __tagHelperExecutionContext.AddHtmlAttribute("placeholder", Html.Raw("Enter in a new time..."));
@@ -98,6 +98,8 @@ namespace TestOutput
                     , StartTagHelperWritingScope, EndTagHelperWritingScope);
                     __InputTagHelper = CreateTagHelper<InputTagHelper>();
                     __tagHelperExecutionContext.Add(__InputTagHelper);
+                    __InputTagHelper2 = CreateTagHelper<InputTagHelper2>();
+                    __tagHelperExecutionContext.Add(__InputTagHelper2);
                     StartTagHelperWritingScope();
 #line 16 "ComplexTagHelpers.cshtml"
 WriteLiteral(checkbox);
@@ -107,8 +109,6 @@ WriteLiteral(checkbox);
                     __tagHelperStringValueBuffer = EndTagHelperWritingScope();
                     __InputTagHelper.Type = __tagHelperStringValueBuffer.ToString();
                     __tagHelperExecutionContext.AddTagHelperAttribute("type", __InputTagHelper.Type);
-                    __InputTagHelper2 = CreateTagHelper<InputTagHelper2>();
-                    __tagHelperExecutionContext.Add(__InputTagHelper2);
                     __InputTagHelper2.Type = __InputTagHelper.Type;
 #line 16 "ComplexTagHelpers.cshtml"
                                    __InputTagHelper2.Checked = true;
@@ -132,6 +132,8 @@ WriteLiteral(checkbox);
                 , StartTagHelperWritingScope, EndTagHelperWritingScope);
                 __InputTagHelper = CreateTagHelper<InputTagHelper>();
                 __tagHelperExecutionContext.Add(__InputTagHelper);
+                __InputTagHelper2 = CreateTagHelper<InputTagHelper2>();
+                __tagHelperExecutionContext.Add(__InputTagHelper2);
                 StartTagHelperWritingScope();
 #line 17 "ComplexTagHelpers.cshtml"
 WriteLiteral(true ? "checkbox" : "anything");
@@ -141,8 +143,6 @@ WriteLiteral(true ? "checkbox" : "anything");
                 __tagHelperStringValueBuffer = EndTagHelperWritingScope();
                 __InputTagHelper.Type = __tagHelperStringValueBuffer.ToString();
                 __tagHelperExecutionContext.AddTagHelperAttribute("tYPe", __InputTagHelper.Type);
-                __InputTagHelper2 = CreateTagHelper<InputTagHelper2>();
-                __tagHelperExecutionContext.Add(__InputTagHelper2);
                 __InputTagHelper2.Type = __InputTagHelper.Type;
                 __tagHelperExecutionContext.Output = await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 await WriteTagHelperAsync(__tagHelperExecutionContext);
@@ -153,6 +153,8 @@ WriteLiteral(true ? "checkbox" : "anything");
                 , StartTagHelperWritingScope, EndTagHelperWritingScope);
                 __InputTagHelper = CreateTagHelper<InputTagHelper>();
                 __tagHelperExecutionContext.Add(__InputTagHelper);
+                __InputTagHelper2 = CreateTagHelper<InputTagHelper2>();
+                __tagHelperExecutionContext.Add(__InputTagHelper2);
                 StartTagHelperWritingScope();
 #line 18 "ComplexTagHelpers.cshtml"
 if(true) {
@@ -189,8 +191,6 @@ if(true) {
                 __tagHelperStringValueBuffer = EndTagHelperWritingScope();
                 __InputTagHelper.Type = __tagHelperStringValueBuffer.ToString();
                 __tagHelperExecutionContext.AddTagHelperAttribute("type", __InputTagHelper.Type);
-                __InputTagHelper2 = CreateTagHelper<InputTagHelper2>();
-                __tagHelperExecutionContext.Add(__InputTagHelper2);
                 __InputTagHelper2.Type = __InputTagHelper.Type;
                 __tagHelperExecutionContext.Output = await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 await WriteTagHelperAsync(__tagHelperExecutionContext);
